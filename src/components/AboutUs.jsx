@@ -1,9 +1,9 @@
-import { HiMiniArrowLongRight,HiBolt,HiCog,HiPlayCircle} from "react-icons/hi2";
+import { HiMiniArrowLongRight,HiBolt,HiPlayCircle} from "react-icons/hi2";
 
 
 function AboutUs() {
   return (
-    <section className="max-w-7xl lg:h-screen grid items-center  m-auto lg:px-8 p-6  ">
+    <section className="max-w-7xl lg:h-screen xl:h-max grid items-center  m-auto lg:px-8 p-6  ">
       <div className="grid grid-cols-1 md:grid-cols-5 py-4">
         <div className="col-span-2">
           <h2 className="font-semibold text-lg text-red-800">About Us</h2>
@@ -39,8 +39,8 @@ function AboutUs() {
             </p>
           </div>
           <div>
-            {/* <img src="" alt="mission-img" className="h-[100px]" /> */}
-            <HiCog className="h-20 w-20"/>
+            <img src="/public/goal@2x.png" alt="mission-img" className="h-20" />
+            {/* <HiCog className="h-20 w-20"/> */}
             <h2 className="font-bold text-lg text-red-800 pt-4">Our Mission</h2>
             <hr className="w-[10%] h-1 bg-red-800 my-4" />
             <p className=" font-extralight text-gray-500">

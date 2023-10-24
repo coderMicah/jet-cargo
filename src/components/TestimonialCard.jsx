@@ -2,8 +2,8 @@ import {FaQuoteRight} from "react-icons/fa"
 
 function TestimonialCard() {
   return (
-    <div className="flex flex-col sm:flex-row font-sans  rounded-xl md:w-1/2 h-60 bg-gray-100">
-      <div className="flex-none w-52 relative ">
+    <div className="flex flex-col sm:flex-row font-sans  rounded-xl  h-60 bg-gray-100">
+      <div className="flex-none w-36 relative ">
         <img
           src="/profile-picture-8.jpg"
           alt=""

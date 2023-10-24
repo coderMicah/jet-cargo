@@ -1,4 +1,8 @@
 import TestimonialCard from "./TestimonialCard";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Navigation } from "swiper/modules";
 
 function Testimonials() {
   return (
@@ -15,8 +19,41 @@ function Testimonials() {
 
       {/* Add testimonials dynamically */}
       <div className="flex justify-between items-center gap-4 ">
-        <TestimonialCard />
-        {/* <TestimonialCard /> */}
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={10}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          breakpoints={{
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 40,
+            },
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 50,
+            },
+          }}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide style={{ width: "max-content" }}>
+            <TestimonialCard />
+          </SwiperSlide>
+          <SwiperSlide style={{ width: "max-content" }}>
+            <TestimonialCard />
+          </SwiperSlide>
+          <SwiperSlide style={{ width: "max-content" }}>
+            <TestimonialCard />
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );
